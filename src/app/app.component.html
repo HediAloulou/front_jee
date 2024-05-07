@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="col-md-12">
+    <div class="card bg-light my-5">
+      <div class="card-body">
+        <h2 class="card-title text-center text-black py-3">{{ title }}</h2>
+          <nav class="p-3">
+              <ul class="text-center  nav nav-pills">
+                <li>
+                  <button  [routerLink]="['/liste']" class="btn btn-outline-info ms-1">Liste clients <i class="bi bi-search text-success"></i>
+                  </button>
+                </li>
+                  <li>
+                  <button  class="btn btn-outline-info ms-1">Ajout client<i class="bi bi-plus-circle text-success"></i>
+                  </button>
+                </li>
+              </ul>
+          </nav>
+      </div>
+    </div>
+    <router-outlet> </router-outlet>
+  </div>
+</div>
